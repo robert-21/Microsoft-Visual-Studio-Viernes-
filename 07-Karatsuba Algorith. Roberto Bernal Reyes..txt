@@ -1,0 +1,54 @@
+
+Karatsuba
+
+
+El algoritmo de Karatsuba es un procedimiento para multiplicar números grandes eficientemente, que fue descubierto por Anatolii Alexeevitch Karatsuba 
+en 1960 y publicado en 1962.1?2? El algoritmo consigue reducir la múltiplicación de dos números de n dígitos a como máximo 
+{\displaystyle 3n^{\log _{2}3}\approx 3n^{1.585}} multiplicaciones de un dígito. Es, por lo tanto, más rápido que el algoritmo clásico, que requiere n2
+ productos de un dígito. Si n = 210 = 1024, en particular, el cómputo final exacto es 310 = 59.049 y (210)2 = 1.048.576, respectivamente.
+El algoritmo de Toom-Cook es una generalización más rápida del de Karatsuba. Para un n suficientemente grande, el algoritmo de Schönhage-Strassen 
+es mejor que el algoritmo de Karatsuba.
+
+El algoritmo de Karatsuba es un claro ejemplo del paradigma divide y vencerás, concretamente del algoritmo de partición binaria.
+
+
+Historia
+El procedimiento estándar para multiplicar dos números de n dígitos requiere un número de operaciones elementales proporcional a n2, o {\displaystyle \Theta (n^{2})} en la Notación O grande. En 1952, Andrey Kolmogorov intentó probar que el algoritmo clásico era óptimo asintóticamente, queriendo demostrar así que cualquier algoritmo para esta tarea requeriría {\displaystyle \Omega (n^{2})} operaciones elementales.
+En otoño de 1960, Kolmogorov organizó un seminario acerca de problemas matemáticos de cibernética en la Universidad Estatal de Moscú, donde planteó su suposición de {\displaystyle \Omega (n^{2})} y otros problemas de complejidad computacional. En una semana, Karatsuba, un estudiante de 25 años, encontró un algoritmo divide y vencerás que multiplicaba dos números de n dígitos en {\displaystyle \Theta (n^{\log _{2}3})} operaciones elementales, refutando así la suposición inicial de Kolmogorov. Kolmogorov se sintió muy desilusionado por tal descubrimiento, y lo hizo público en el que sería su siguiente y último encuentro del seminario.2?
+El método fue publicado en 1962, en la revista científica soviética Proceedings of the USSR Academy of Sciences.1? El artículo había sido escrito por Kolmogorov, posiblemente en colaboración con Yuri Ofman, pero nombraba a "A. Karatsuba y Yu. Ofman" como los autores. Karatsuba solo se dio cuenta de la publicación cuando recibió una copia del artículo por parte de la editorial de la revista.2?
+
+Algoritmo
+
+
+El paso básico del algoritmo de Karatsuba es una fórmula que nos permite calcular el producto de dos números grandes x e y usando tres multiplicaciones
+ de números más pequeños, cada uno con más o menos la mitad de los dígitos de x e y, más algunas sumas y desplazamientos de dígitos.
+Supongamos que x e y están representados como cadenas de n dígitos en alguna base B. Para cualquier entero positivo m menor que n, uno puede 
+dividir los dos números dados de la manera siguiente:
+x = x1Bm + x0
+y = y1Bm + y0
+donde x0 e y0 son menores que Bm. El producto es, entonces:
+xy = (x1Bm + x0)(y1Bm + y0)
+= z2 B2m + z1 Bm + z0
+donde
+z2 = x1y1
+z1 = x1y0 + x0y1
+z0 = x0y0
+Estas fórmulas requieren cuatro multiplicaciones. Karatsuba observó que podemos calcular xy en solo tres multiplicaciones, por el coste de unas sumas
+ adicionales:
+Supongamos z2 = x1y1
+Supongamos z0 = x0y0
+Supongamos z1 = (x1 + x0)(y1 + y0) - z2 - z0
+ya que
+z1 = (x1y1 + x1y0 + x0y1 + x0y0) - x1y1 - x0y0 = x1y0 + x0y1
+Si y1 = 0, solo hay que realizar dos multiplicaciones puesto que:
+z2 = 0
+z0 = x0y0
+z1 = x1y0
+
+
+
+
+Yo entendi esto:
+
+El algoritmo de Karatsuba  permite el calculo de multipliacasion de numeros muy grandes aplicando otro algoridmo el cual es divide y vencerás esto para simplificar la
+multiplicasion de dicho numero atraves de una formula
