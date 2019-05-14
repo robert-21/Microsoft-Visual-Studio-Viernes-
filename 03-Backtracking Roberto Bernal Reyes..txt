@@ -1,0 +1,37 @@
+
+Backtracking (vuelta atrás) 
+
+Es una estrategia para encontrar soluciones a problemas que satisfacen restricciones. El término "backtrack" fue acuñado por primera vez por el matemático 
+estadounidense D. H. Lehmer en la década de 1950.
+
+Ejemplo de árbol de búsqueda. Nótese que el árbol no tiene por qué ser binario.
+
+
+Los problemas que deben satisfacer un determinado tipo de restricciones son problemas completos, donde el orden de los elementos de la solución no importa. 
+Estos problemas consisten en un conjunto (o lista) de variables a la que a cada una se le debe asignar un valor sujeto a las restricciones del problema.
+La técnica va creando todas las posibles combinaciones de elementos para obtener una solución. Su principal virtud es que en la mayoría de las
+implementaciones se puede evitar combinaciones, estableciendo funciones de acotación (o poda) reduciendo el tiempo de ejecución.
+
+Diseño e implementación.
+
+Esencialmente, la idea es encontrar la mejor combinación posible en un momento determinado, por eso, se dice que este tipo de algoritmo es una búsqueda en 
+profundidad. Durante la búsqueda, si se encuentra una alternativa incorrecta, la búsqueda retrocede hasta el paso anterior y toma la siguiente alternativa.
+ Cuando se han terminado las posibilidades, se vuelve a la elección anterior y se toma la siguiente opción . Si no hay más alternativas la búsqueda falla. 
+De esta manera, se crea un árbol implícito, en el que cada nodo es un estado de la solución (solución parcial en el caso de nodos interiores o solución 
+total en el caso de los nodos hoja).
+
+Normalmente, se suele implementar este tipo de algoritmos como un procedimiento recursivo. Así, en cada llamada al procedimiento se toma una variable 
+y se le asignan todos los valores posibles, llamando a su vez al procedimiento para cada uno de los nuevos estados. La diferencia con la búsqueda en 
+profundidad es que se suelen diseñar funciones de cota, de forma que no se generen algunos estados si no van a conducir a ninguna solución, o a una 
+solución peor de la que ya se tiene. De esta forma se ahorra espacio en memoria y tiempo de ejecución.
+
+
+
+
+Yo entendi esto :
+
+Es una estrategia para encontrar soluciones a problemas que satisfacen restricciones donde el orden de los elementos de la solución no importa.
+La técnica va creando todas las posibles combinaciones de elementos para obtener una solución la idea es encontrar la mejor combinación posible en un 
+momento determinado,  Durante la búsqueda, si se encuentra una alternativa incorrecta, la búsqueda retrocede hasta el paso anterior y toma la siguiente 
+alternativa.Cuando se han terminado las posibilidades, se vuelve a la elección anterior y se toma la siguiente opción . Si no hay más alternativas 
+la búsqueda falla.

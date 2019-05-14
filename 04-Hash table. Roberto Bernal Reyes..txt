@@ -1,0 +1,35 @@
+
+Hash table (Tabla de picadillo)
+
+
+
+
+
+En computación , una tabla hash ( mapa hash ) es una estructura de datos que implementa un tipo de datos abstractos de matriz asociativa , una estructura
+que puede asignar claves a valores . Una tabla hash utiliza una función hash para calcular un índice en una matriz de cubos o ranuras , desde 
+donde se puede encontrar el valor deseado.
+Idealmente, la función de hash asignará cada clave a un grupo único, pero la mayoría de los diseños de tablas de hash emplean una función de hash 
+imperfecta, que podría causar colisiones de hash donde la función de hash genera el mismo índice para más de una tecla. Tales colisiones deben ser
+acomodadas de alguna manera.
+En una tabla hash bien dimensionada, el costo promedio ( número de instrucciones ) para cada búsqueda es independiente del número de elementos almacenados
+en la tabla. Muchos diseños de tablas hash también permiten inserciones y eliminaciones arbitrarias de pares clave-valor, a costo promedio constante 
+por operación.
+En muchas situaciones, las tablas hash resultan ser, en promedio, más eficientes que los árboles de búsqueda o cualquier otra tabla de estructura de
+ búsqueda. Por esta razón, se utilizan ampliamente en muchos tipos de software informático , en particular para matrices asociativas , indexación de 
+bases de datos , cachés y conjuntos .
+
+Ventajas 
+    • La principal ventaja de las tablas hash sobre otras estructuras de datos de tabla es la velocidad. Esta ventaja es más evidente cuando el número
+      de entradas es grande. Las tablas de hash son particularmente eficientes cuando el número máximo de entradas se puede predecir de antemano, 
+      de modo que la matriz de cubetas se puede asignar una vez con el tamaño óptimo y nunca cambiar de tamaño.
+    • Si el conjunto de pares clave-valor es fijo y se conoce con anticipación (por lo tanto, no se permiten las inserciones ni las eliminaciones), 
+    • Aunque las operaciones en una tabla hash toman un tiempo constante en promedio, el costo de una buena función hash puede ser significativamente mayor
+      que el bucle interno del algoritmo de búsqueda para una lista secuencial o un árbol de búsqueda. Por lo tanto, las tablas hash no son efectivas 
+      cuando el número de entradas es muy pequeño. 
+    
+
+Yo entendi esto :
+
+Una tabla hash,es una estructura de datos que asocia llaves o claves con valores. La operación principal que soporta de manera eficiente es la búsqueda: permite el acceso a los 
+elementos  almacenados a partir de una clave generada . Funciona transformando la clave con una función hash en un hash, un número que identifica la posición (casilla o cubeta) 
+donde la tabla hash localiza el valor deseado.

@@ -1,0 +1,17 @@
+
+Linear Last Squeares ( Mínimos cuadrados lineales )
+
+
+Mínimos cuadrados lineales ( LLS ) es la aproximación de mínimos cuadrados de las funciones lineales a los datos. Es un conjunto de formulaciones para resolver 
+los problemas estadísticos involucrados en la regresión lineal , que incluyen variantes para residuos ordinarios (no ponderados) , ponderados y generalizados 
+(correlacionados) . Los métodos numéricos para los mínimos cuadrados lineales incluyen la inversión de la matriz de las ecuaciones normales y los métodos de
+ descomposición ortogonal.
+
+En una perspectiva de álgebra lineal, el algoritmo de regresión lineal es la manera de resolver un sistema lineal  mathbfAx=b con más ecuaciones que incógnitas. 
+En la mayoría de los casos no hay solución a este problema. Y esto se debe a que el vector b no pertenece al espacio de columna de  mathbfA, C( mathbfA).
+
+Yo entendi esto:
+
+Es un procedimiento matemático para encontrar la curva que mejor se adapta a un conjunto de puntos dado al minimizar la suma de los cuadrados de las compensaciones ("los residuos") 
+de los puntos de la curva. La suma de los cuadrados de las compensaciones se utiliza en lugar de los valores absolutos  ya que esto permite que los residuos 
+se traten como una cantidad diferenciable continua.

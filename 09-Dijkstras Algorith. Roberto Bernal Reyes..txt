@@ -1,0 +1,37 @@
+
+Algoritmo de Dijkstra (algoritmo de caminos mínimos)
+
+El algoritmo de Dijkstra, también llamado algoritmo de caminos mínimos, es un algoritmo para la determinación del camino más corto, dado un vértice origen,
+ hacia el resto de los vértices en un grafo que tiene pesos en cada arista. Su nombre alude a Edsger Dijkstra, científico de la computación de los Países
+ Bajos que lo describió por primera vez en 1959.
+
+La idea subyacente en este algoritmo consiste en ir explorando todos los caminos más cortos que parten del vértice origen y que llevan a todos los demás 
+vértices; cuando se obtiene el camino más corto desde el vértice origen hasta el resto de los vértices que componen el grafo, el algoritmo se detiene.
+Se trata de una especialización de la búsqueda de costo uniforme y, como tal, no funciona en grafos con aristas de coste negativo (al elegir siempre el 
+nodo con distancia menor, pueden quedar excluidos de la búsqueda nodos que en próximas iteraciones bajarían el costo general del camino al pasar por una
+arista con costo negativo).
+Una de sus aplicaciones más importantes reside en el campo de la telemática. Gracias a él, es posible resolver grafos con muchos nodos, lo que sería muy 
+complicado resolver sin dicho algoritmo, encontrando así las rutas más cortas entre un origen y todos los destinos en una red.
+
+
+Teniendo un grafo dirigido ponderado de N nodos no aislados, sea x el nodo inicial. Un vector D de tamaño N guardará al final del algoritmo las distancias
+ desde x hasta el resto de los nodos.
+
+    1. Inicializar todas las distancias en D con un valor infinito relativo, ya que son desconocidas al principio, exceptuando la de x, que se debe colocar en 0, debido
+       a que la distancia de x a x sería 0.
+    2. Sea a = x (Se toma a como nodo actual.)
+    3. Se recorren todos los nodos adyacentes de a, excepto los nodos marcados. Se les llamará nodos no marcados vi.
+    4. Para el nodo actual, se calcula la distancia tentativa desde dicho nodo hasta sus vecinos con la siguiente fórmula: dt(vi) = Da + d(a,vi). Es decir, la distancia 
+       tentativa del nodo ‘vi’ es la distancia que actualmente tiene el nodo en el vector D más la distancia desde dicho nodo ‘a’ (el actual) hasta el nodo vi. Si la distancia 
+       tentativa es menor que la distancia almacenada en el vector, entonces se actualiza el vector con esta distancia tentativa. Es decir, si dt(vi) < Dvi ? Dvi = dt(vi)
+    5. Se marca como completo el nodo a.
+    6. Se toma como próximo nodo actual el de menor valor en D (puede hacerse almacenando los valores en una cola de prioridad) y se regresa al paso 3, 
+       mientras existan nodos no marcados.Una vez terminado al algoritmo, D estará completamente lleno.
+
+
+
+Yo entendi esto :
+
+Este es un algoridmo cuyo objetivo es econtar el camino mas corto a para solicionar un problema, consiste en ir explorando todos los caminos más cortos que parten del 
+vértice origen y que llevan a todos los demás vértices; cuando se obtiene el camino más corto desde el vértice origen hasta el resto de los vértices que componen el grafo, 
+el algoritmo se detiene.
