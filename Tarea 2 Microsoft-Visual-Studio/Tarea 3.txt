@@ -1,0 +1,27 @@
+Microsoft .NET
+
+.NET es un framework de Microsoft que hace un énfasis en la transparencia de redes, con independencia de plataforma de hardware y que permite un rápido desarrollo de aplicaciones. 
+Basada en ella, la empresa intenta desarrollar una estrategia horizontal que integre todos sus productos, desde el sistema operativo hasta las herramientas de mercado.
+
+.NET podría considerarse una respuesta de Microsoft al creciente mercado de los negocios en entornos Web, como competencia a la plataforma Java de Oracle Corporation y a los diversos 
+framework de desarrollo web basados en PHP. Su propuesta es ofrecer una manera rápida y económica, a la vez que segura y robusta, de desarrollar aplicaciones –o como la misma plataforma
+las denomina, soluciones– permitiendo una integración más rápida y ágil entre empresas y un acceso más simple y universal a todo tipo de información desde cualquier tipo de dispositivo.
+
+
+Yo estendi esto: Se trata de una plataforma para el desarrollo de software que fue lanzada por Microsoft con la finalidad de fusionar su amplio catálogo de productos, que va desde 
+sus múltiples sistemas operativos hasta herramientas de desarrollo. 
+
+
+**************************************************************************************************************************************************************************************
+Open sourse 
+
+El código abierto es un modelo de desarrollo de software basado en la colaboración abierta.1? Se enfoca más en los beneficios prácticos (acceso al código fuente) que en cuestiones éticas
+o de libertad que tanto se destacan en el software libre.2? Para muchos el término «libre» hace referencia al hecho de adquirir un software de manera gratuita.
+
+
+Yo estendi esto: Open sourse  se significa codigo abierto y hace referensia a los programas echos en colaboracion ,
+
+
+
+
+**************************************************************************************************************************************************************************************
